@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/TeamMMs/",
+  base: "/catchMonsters/",
   plugins: [react(), VitePWA({
     registerType: 'autoUpdate',
     injectRegister: false,
@@ -15,7 +15,7 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'TeamMMs',
+      name: 'catchMonsters',
       short_name: 'MMs',
       description: 'chatch! mathMonster',
       theme_color: '#ffffff',
