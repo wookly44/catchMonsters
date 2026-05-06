@@ -2,7 +2,7 @@ name: Deploy Static Site
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 # Pages 배포에 필요한 권한
 permissions:
