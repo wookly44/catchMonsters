@@ -6,10 +6,9 @@ export const kakaos = ()=>{
   const { Kakao } = window;
 
   const initKakao = async () => {
-    const jsKey = "9f5304fbac21cb4ee421113d0f2f7bab";
+    const jsKey = "d1516d08bd2f685ca196b2b0940c34e8";
     if (Kakao && !Kakao.isInitialized()) {
       await Kakao.init(jsKey);
-      // console.log(`kakao 초기화 ${Kakao.isInitialized()}`);
     }
   };
 
@@ -30,7 +29,7 @@ export const kakaos = ()=>{
             );
             localStorage.setItem("nickname", kakaoAccount.profile.nickname);
             // window.location.href = "http://localhost:5173/";
-            window.location.href = "https://pichiss.github.io/TeamMMs/";
+            window.location.href = "https://wookly44.github.io/catchMonsters/";
         },
           fail(error) {
               console.log(error);
@@ -45,8 +44,6 @@ export const kakaos = ()=>{
 
   const kakaoLogout = () => {
     Kakao.Auth.logout((res) => {
-        // console.log(Kakao.Auth.getAccessToken());
-        // console.log(res);
         localStorage.removeItem("profileImg");
         localStorage.removeItem("nickname");
         setUser(null);
